@@ -1,0 +1,79 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: inline-end;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background-color: white;
+    color: #222;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 300px;
+    height: 100px;
+}
+
+body {
+    color: #222;
+    font-family: arial, sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    padding-top: 200px;
+}
+
+input[type=text] {
+    background-color: white;
+    background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fw7.pngwing.com%2Fpngs%2F456%2F948%2Fpng-transparent-computer-icons-desktop-web-search-engine-wordpress-com-search-icon-search-logo-website-circle-wordpresscom-thumbnail.png&imgrefurl=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-bzbwi&tbnid=OIsQtscoMLLepM&vet=12ahUKEwi00tbk15_rAhUY8xoKHWlaDO8QMygGegUIARDCAQ..i&docid=EChc1NUpEzGL5M&w=360&h=359&q=google%20search%20icon%20png&client=ubuntu&ved=2ahUKEwi00tbk15_rAhUY8xoKHWlaDO8QMygGegUIARDCAQ);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.flex-container {
+    padding-top: 70px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    margin: 30px;
+    width: 500px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+#sign_in {
+    background-color: #4285F4;
+    color: white;
+    height: 30px;
+    width: 70px;
+    border: none;
+}
+
+#search_button {
+    margin: 10px;
+    padding: 5px;
+    width: 120px;
+}
