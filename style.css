@@ -14,17 +14,21 @@ a {
     display: block;
     padding: 8px;
     background-color: white;
-    color: #222;
-    font-size: 13px;
+    color: #5a5858;
+    font-size: 15px;
 }
 
 a:hover {
     text-decoration: underline;
 }
+nav a {
+    line-height: 30px;
+}
 
 img {
     width: 300px;
     height: 100px;
+    margin: 100px 0px 30px 500px;
 }
 
 body {
@@ -48,17 +52,8 @@ input[type=text] {
     padding-left: 40px;
 }
 
-.flex-container {
-    padding-top: 70px;
-    display: flex;
-    height: 300px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 #search {
-    margin: 30px;
+    margin: 0px 0px 20px 400px;
     width: 500px;
     height: 25px;
     border-radius: 15px;
@@ -73,7 +68,12 @@ input[type=text] {
 }
 
 #search_button {
-    margin: 10px;
-    padding: 5px;
-    width: 120px;
+    margin: 0px 0px 100px 550px;
+    padding: 10px;
+    border: none;
+}
+
+#feeling_lucky {
+    padding: 10px;
+    border: none;
 }
