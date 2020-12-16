@@ -71,6 +71,7 @@ img {
 input[type=text] {
     width: 365px;
     margin: 5px;
+    position: absolute;
 }
 
 input[type=text]:focus {
