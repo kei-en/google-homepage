@@ -68,7 +68,7 @@ img {
     left: 55%;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     .right {
         display: none;
     }
