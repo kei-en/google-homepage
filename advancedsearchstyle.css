@@ -68,6 +68,12 @@ img {
     left: 55%;
 }
 
+@media (min-width: 900px) {
+    .right {
+        display: none;
+    }
+}
+
 input[type=text] {
     width: 365px;
     margin: 5px;
