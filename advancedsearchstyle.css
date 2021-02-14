@@ -125,7 +125,11 @@ input[type=text] {
 
 input[type=text]:focus {
     border: 1px solid rgb(122, 122, 236);
+<<<<<<< HEAD
     padding: 2px;
+=======
+    padding: 4px;
+>>>>>>> 1910a585804e3ce3822637b55689c7a2c62d0188
 }
 
 select {
