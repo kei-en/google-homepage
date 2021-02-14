@@ -9,49 +9,37 @@
 <body>
     <nav>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <a href="images.html">Images</a>
-        <a href="index.html">Search</a>
+        <a href="images.html" class="links">Images</a>
+        <a href="index.html" class="links">Search</a>
     </nav>
     <p id="header">Advanced Search</p>
     <form action="https://google.com/search">
-        <p>Find pages with...</p>
-        <div class="left">
-            <label for="one">all these words:</label><br>
-            <label for="two">this exact word or phrase:</label><br>
-            <label for="three">any of these words:</label><br>
-            <label for="four">none of these words:</label><br>
-            <label for="five">numbers ranging from:</label><br>                
-        </div>
-        <div class="middle">
-            <input type="text" id="one" name="as_q"><br>
-            <input type="text" id="two" name="as_epq"><br>
-            <input type="text" id="three" name="as_oq"><br>
-            <input type="text" id="four" name="as_eq"><br>
-            <input type="number" id="five" name="as_nlo">
-            <label>to</label>
-            <input type="number" id="five" name="as_nhi"><br>
-        </div>
-        <p style="position: absolute; left: 55%; top: 100px;"><strong>To do this in the search box.</strong></p><br>
+        <p style="font-size: medium;">Find pages with...</p>
         <div>
+            <label for="one" class="left">all these words:</label><br>
+            <div class="input"><input type="text" id="one" name="as_q" class="middle"><br></div>
             <p class="right" style="top: 135px;">Type the important words: <span class="monospace">tri-colour right terrier</span></p><br>
+            <label for="two" class="left">this exact word or phrase:</label><br>
+            <div class="input"><input type="text" id="two" name="as_epq" class="middle"><br></div>
             <p class="right" style="top: 175px;">Put exact words in quotes: <span class="monospace">"rat terrier"</span></p><br>
+            <label for="three" class="left">any of these words:</label><br>
+            <div class="input"><input type="text" id="three" name="as_oq" class="middle"><br></div>
             <p class="right" style="top: 225px;">Type OR between all the words you want: <span>miniature OR standard</span></p><br>
+            <label for="four" class="left">none of these words:</label><br>
+            <div class="input" style="margin-bottom: 5px;"><input type="text" id="four" name="as_eq" class="middle"><br></div>
             <p class="right" style="top: 275px; line-height: 15px;">Put a minus sign just before words you don't want: <span class="monospace">-rodent, -"Jack Russell"</span></p><br>  
+            <label for="five" class="left">numbers ranging from:</label><br>                
+            <input type="number" id="five" name="as_nlo" class="middle" style="width: 170px; height: 8px;">
+            <label>to</label>
+            <input type="number" id="five" name="as_nhi" style="width: 175px; height: 8px;"><br>
             <p class="right" style="top: 315px; line-height: 15px;"> Put two full stops between the numbers and add a unit of measurement: <span class="monospace">10..35 kg, £300..£500, 2010..2011</span></p>             
         </div>
+        <p class="right-header"><strong>To do this in the search box.</strong></p><br>
+
         <p style="font-size: 15px;">Then narrow your results by...</p><br>
-        <div class="left">
-            <label for="six">language:</label><br>
-            <label for="seven">region:</label><br>
-            <label for="eight">last update:</label><br>
-            <label for="nine">site or domain:</label><br>
-            <label for="ten">terms appearing:</label><br>
-            <label for="eleven"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en" style="margin: 0; padding: 0;">SafeSearch:</a></label><br>
-            <label for="twelve">file type:</label><br>
-            <label for="thirteen"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en" style="margin: 0; padding: 0;">usage rights:</a></label><br>
-        </div>
-        <div class="middle">
-            <select name="lr" id="six">
+        <div>
+            <label for="six" class="left">language:</label><br>
+            <select name="lr" id="six" class="middle">
                 <option value="anylanguage" selected>any language</option>
                 <option value="afrikaans">Afrikaans</option>
                 <option value="arabic">Arabic</option>
@@ -100,7 +88,9 @@
                 <option value="ukranian">Ukranian</option>
                 <option value="vietnamese">Vietnamese</option>
             </select><br>
-            <select name="cr" id="seven">
+            <p class="right" style="top: 480px;">Find pages in the language that you select.</p><br>
+            <label for="seven" class="left">region:</label><br>
+            <select name="cr" id="seven" class="middle">
                 <option value="anyregion" selected>any region</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -349,26 +339,36 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select><br>
-            <select name="as_qdr" id="eight">
+            <p class="right" style="top: 540px;">Find pages published in a particular region.<br></p>
+            <label for="eight" class="left">last update:</label><br>
+            <select name="as_qdr" id="eight" class="middle">
                 <option value="anytime" selected>anytime</option>
                 <option value="past 24 hours">past 24 hours</option>
                 <option value="past week">past week</option>
                 <option value="past month">past month</option>
                 <option value="past year">past year</option>
             </select><br>
-            <input type="text" name="as_sitesearch" id="nine"><br>
-            <select name="as_occt" id="ten">
+            <p class="right" style="top: 580px;">Find pages updated within the time that you specify.<br></p>
+            <label for="nine" class="left">site or domain:</label><br>
+            <div class="input" style="margin-bottom: 5px;"><input type="text" name="as_sitesearch" id="nine" class="middle"><br></div>
+            <p class="right" style="top: 640px; line-height: 15px;">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p><br>
+            <label for="ten" class="left">terms appearing:</label><br>
+            <select name="as_occt" id="ten" class="middle">
                 <option value="anywhereinthepage" selected>anywhere in the page</option>
                 <option value="inthetitleofthepage">in the title of the page</option>
                 <option value="inthetextofthepage">in the text of the page</option>
                 <option value="intheurlofthepage">in the URL of the page</option>
                 <option value="inlinkstothepage">in links to the page</option>
             </select><br>
-            <select name="safe" id="eleven">
+            <p class="right" style="top: 690px; line-height: 15px;">Search for terms in the whole page, page title or web address, or links to the page you're looking for.<br></p>
+            <label for="eleven" class="left"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en" style="margin: 0; padding: 0;">SafeSearch:</a></label><br>
+            <select name="safe" id="eleven" class="middle">
                 <option value="showexplicitresults" selected>Show explicit results</option>
                 <option value="hideexplicitresults">Hide explicit results</option>
             </select><br>
-            <select name="as_filetype" id="twelve">
+            <p class="right" style="top: 730px;">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">safesearch</a> whether to filter any sexual content.<br></p>
+            <label for="twelve" class="left">file type:</label><br>
+            <select name="as_filetype" id="twelve" class="middle">
                 <option value="anytype" selected>any type</option>
                 <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
                 <option value="ps">Adobe Postscript (.ps)</option>
@@ -381,28 +381,22 @@
                 <option value="rtf">Rich Text Format (.rtf)</option>
                 <option value="swf">Shockwave Flash (.swf)</option>
             </select><br>
-            <select name="tbs" id="thirteen>
+            <p class="right" style="top: 770px;">Find pages in the format that you prefer.<br></p>
+            <label for="thirteen" class="left"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en" style="margin: 0; padding: 0;">usage rights:</a></label><br>
+            <select name="tbs" id="thirteen" class="middle">
                 <option value="notfilteredbylicense" selected>not filtered by license</option>
                 <option value="freetouseorshare">free to use or share</option>
                 <option value="freetouseorsharecommercially">free to use or share, even commercially</option>
                 <option value="freetouseshareormodify">free to use, share or modify</option>
                 <option value="freetousesharemodifycommercially">free to use, share or modify, even commercially</option>
             </select><br>
+            <p class="right" style="top: 820px;">Find pages that you are free to use yourself.<br></p>
         </div>
-        <div>
-            <p class="right" style="top: 480px;">Find pages in the language that you select.</p><br>
-            <p class="right" style="top: 520px;">Find pages published in a particular region.<br></p>
-            <p class="right" style="top: 555px;">Find pages updated within the time that you specify.<br></p>
-            <p class="right" style="top: 605px; line-height: 15px;">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p><br>
-            <p class="right" style="top: 650px; line-height: 15px;">Search for terms in the whole page, page title or web address, or links to the page you're looking for.<br></p>
-            <p class="right" style="top: 685px;">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">safesearch</a> whether to filter any sexual content.<br></p>
-            <p class="right" style="top: 720px;">Find pages in the format that you prefer.<br></p>
-            <p class="right" style="top: 760px;">Find pages that you are free to use yourself.<br></p>
-        </div>
+        
         <input type="submit" value="Advanced Search" id="submit">
     </form>
     <div>
-        <p style="font-size: 20px; margin-left: 12px;">You can also...</p>
+        <p style="font-size: 20px; margin: 80px 0px 0px 12px;">You can also...</p>
         <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are simillar to URL</a><br>
         <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a><br>
         <a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a><br>
@@ -410,9 +404,9 @@
     </div>
     <footer>
         <ul>
-            <li><a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-KE&fg=1">Help</a></li>
-            <li><a href="https://policies.google.com/privacy?hl=en-KE&fg=1">Privacy</a></li>
-            <li><a href="https://policies.google.com/terms?hl=en-KE&fg=1">Terms</a></li>
+            <li><a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-KE&fg=1" class="links">Help</a></li>
+            <li><a href="https://policies.google.com/privacy?hl=en-KE&fg=1" class="links">Privacy</a></li>
+            <li><a href="https://policies.google.com/terms?hl=en-KE&fg=1" class="links">Terms</a></li>
         </ul>
     </footer>
 </body>

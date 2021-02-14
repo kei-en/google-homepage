@@ -16,14 +16,18 @@
         </ul>
     </nav>
 
-    <div>
+    <div class="image">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        <form action="https://google.com/search">
-            <input type="text" id="search" name="q"><br>
-            <input type="submit" value="Google Search" id="search_button">
+    </div>
+    <div class="mainContent">
+        <form>
+            <div class="tinput"><input type="text" id="search" name="q"><br></div>
+            <div class="btn">
+                <input type="submit" value="Google Search" id="search_button" formaction="https://google.com/search">
+                <input type="submit" value="I'm Feeling Lucky" id="feeling_lucky" formaction="https://www.google.com/doodles/">
+            </div>
         </form>
         <form action="https://www.google.com/doodles/">
-            <input type="submit" value="I'm Feeling Lucky" id="feeling_lucky">
         </form>
     </div>
     <footer>

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -27,19 +33,10 @@ nav a {
     background: white;
 }
 
-img {
-    width: 300px;
-    height: 100px;
-    margin: 100px 0px 30px 500px;
-}
 
 body {
     color: #222;
     font-family: arial, sans-serif;
-}
-
-main {
-    width: 100%;
 }
 
 footer {
@@ -52,34 +49,56 @@ footer {
 }
 
 
+
 input[type=text] {
-    margin: 0px 0px 20px 400px;
+
     width: 500px;
     height: 30px;
     border-radius: 15px;
     box-shadow:0 1px 6px rgba(32,33,36,.28);
     border-color:rgba(223,225,229,0);
     background-image: url("https://img.pngio.com/simple-grey-search-icon-transparent-png-stickpng-search-icon-png-2064_2011.png");
-    background-position: 10px 8px;
+    background-position: 10px 4px;
     background-size: 20px 20px;
     background-repeat: no-repeat;
     padding-left: 40px;
 }
 
+.tinput {
+    text-align: center;
+}
+
+img { 
+    margin: 80px 0px 20px 500px;
+}
+@media (max-width: 900px){
+    img {
+        margin: 80px 0px 20px 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    img {
+        margin: 80px 0px 20px 100px;
+    }
+}
+
 #sign_in {
-    background-color: #4285F4;
+    background-color: #4d90fe;
     color: white;
     height: 30px;
-    width: 70px;
+    max-width: 70px;
     border: none;
 }
 
-#search_button {
-    margin: 0px 0px 100px 550px;
+#search_button {    
     padding: 10px;
     border: none;
     opacity: 0.9;
 }
+/*.btnSearch {
+    margin: 20px 0px 100px 550px;
+}*/
 
 #search_button:hover {
     border: 1px solid #ebebec;
@@ -91,14 +110,23 @@ input[type=text] {
 #feeling_lucky {
     padding: 10px;
     border: none;
+}
+/*.btnLucky {
     position: absolute;
     left: 680px;
-    top: 298px;
-}
+    top: 273px;
+    margin-top: 20px;
+
+}*/
 
 #feeling_lucky:hover {
     border: 1px solid #ebebec;
     background: #ebebeb;
     cursor: pointer;
     opacity: 1;
+}
+
+.btn {
+    text-align: center;
+    margin: 20px;
 }
