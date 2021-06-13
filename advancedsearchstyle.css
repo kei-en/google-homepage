@@ -73,31 +73,6 @@ hr {
     margin: 20px 0px;
 }
 
-/*
-.left {
-    float: left;
-    width: 20%;
-    line-height: 40px;
-}
-
-.middle {
-    width: 50%;
-    line-height: 40px;
-}
-
-.right {
-    width: 30%;
-    line-height: 40px;
-    position: absolute;
-    left: 55%;
-}
-
-.left .right .middle {
-    display: flex;
-    flex-direction: column;
-}
-*/
-
 .sub-header {
     display: flex;
     flex-direction: row;
@@ -254,6 +229,7 @@ footer {
     height: 3.7rem;
     background: rgb(235, 235, 235);
     margin-top: 20px;
+    display: inline-flex;
 }
 
 footer a {
