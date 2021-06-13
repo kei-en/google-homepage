@@ -17,7 +17,7 @@ input[type=number] {
 }
 
 body {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 ul {
@@ -38,15 +38,14 @@ nav {
     left: 0;
     width: 100%;
     height: 3.5rem;
-    background: rgb(235, 235, 235);
 }
 
 nav a {
     text-decoration: none;
     padding: 8px;
-    background-color: rgb(235, 235, 235);
+    margin-right: 10px;
     color: #5a5858;
-    font-size: 13px;
+    font-size: 15px;
     float: right;
     margin-top: 14px;
 }
@@ -56,17 +55,25 @@ nav a:hover {
 }
 
 img {
-    height: 60px;
-    padding: 10px;
+    height: 55px;
+    padding: 15px;
+    margin: 10px 0px 5px 10px;
 }
 
 #header {
-    margin: 80px 0 15px 35px;
+    margin: 80px 0 20px 35px;
     width: 100%;
-    color: red;
-    font-size: 20px;
+    color: rgb(182, 7, 7);
+    font-size: 23px;
 }
 
+hr {
+    opacity: 0.1;
+    color: #5a5858;
+    margin: 20px 0px;
+}
+
+/*
 .left {
     float: left;
     width: 20%;
@@ -89,51 +96,124 @@ img {
     display: flex;
     flex-direction: column;
 }
+*/
 
-@media (max-width: 1100px) {
-    .left .right .middle {
-        flex-direction: row;
-    }
-    .left {
-        width: 100%
-    }
-    .middle {
-        width: 100%;
-        left: 0;
-    }
-    .right, .right-header{
-        display: none;
-    }
-    .input {
-        margin: 10px;
-    }
-    #submit {
-        left: 0;
-        float: inline-end;
-    }
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px;
+    font-size: 17px;
+}
+
+.container {
+    width: 100%;
+    display: Flex;
+    flex-direction: row;
+}
+
+.left-div {
+    width: 10%;
+    white-space: nowrap;
+    margin: 0px 20px 0px 30px;
+    line-height: 50px;
+}
+
+.right-div {
+    margin: 0 30px;
+    line-height: 35px;
 }
 
 .input {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.always-wrapped {
+    line-height: 20px;
+}
+
+@media (max-width: 1300px) {
+    .wrapping {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left-div,
+    .middle-div {
+        width: auto;
+        max-width: 50%;
+    }
+
+    .left-div-2 {
+        margin-right: 70px;
+    }
+
+    .right-div {
+        display: none;
+    }
+
+    input,
+    select {
+        max-width: 95%;
+    }
+
+    input[type=number] {
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .number-container {
+        margin-left: 5px;
+    }
+
+    .submit {
+        margin-left: 70px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .submit {
+        margin-left: 100px;
+    }
 }
 
 input[type=text] {
-    width: 365px;
+    width: 500px;
+    height: 30px;
     margin: 5px;
-    position: absolute;
 }
 
 input[type=text]:focus {
     border: 1px solid rgb(122, 122, 236);
-<<<<<<< HEAD
     padding: 2px;
-=======
     padding: 4px;
->>>>>>> 1910a585804e3ce3822637b55689c7a2c62d0188
+}
+
+input[type=number]{
+    width: 220px;
+    height: 30px;
+}
+
+.left-input {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.right-input {
+    margin-left: 20px;
 }
 
 select {
-    max-width: 390px;
+    width: 500px;
+    height: 30px;
+    margin: 5px;
+}
+
+.submit {   
+    position: relative; 
+    left: 43%;
+    margin-top: 20px;
 }
 
 #submit {
@@ -142,39 +222,47 @@ select {
     color: white;
     height: 30px;
     min-width: 120px;
-    margin-left: 550px;
-    margin-top: 20px;
+}
+
+.left-header {
+    width: 50%;
 }
 
 .right-header {
-    position: absolute; 
-    left: 55%; 
-    top: 100px;
+    margin-left: 50px;
+    color: #5a5858;
+    font-size: 14px;
 }
 
 a {
     text-decoration: none;
-    padding: 5px;
-    margin-left: 15px;
+}
+
+.links-div {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.links-div a {
+    line-height: 20px;
 }
 
 footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3.5rem;
+    height: 3.7rem;
     background: rgb(235, 235, 235);
     margin-top: 20px;
-    border-top: 1px solid gray;
 }
 
 footer a {
     text-decoration: none;
     display: block;
-    padding: 8px;
-    background-color: rgb(235, 235, 235);
+    margin-top: 10px;
+    padding: 10px;
     color: #5a5858;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 footer a:hover {
